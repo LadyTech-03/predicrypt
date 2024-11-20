@@ -1,3 +1,5 @@
+![Predicrypt Homepage](./public/predicrypt.png)
+
 # predicrypt: Decentralized Prediction Markets
 
 A decentralized prediction market platform built on the Sui blockchain, allowing users to create markets, place bets, and earn SUI as rewards for accurate predictions.
