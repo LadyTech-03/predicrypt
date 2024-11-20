@@ -1,8 +1,6 @@
-![Predicrypt Homepage](./public/predicrypt.png)
-
 # predicrypt: Decentralized Prediction Markets
 
-A decentralized prediction market platform built on the Sui blockchain, allowing users to create markets, place bets, and earn SUI as rewards for accurate predictions.
+A decentralized prediction market platform built on the Sui blockchain, allowing users to create markets, place bets, and earn rewards for accurate predictions.
 
 ## Disclaimer: Use of Unaudited Code for Educational Purposes Only
 This code is provided strictly for educational purposes and has not undergone any formal security audit. 
@@ -84,7 +82,12 @@ sui client publish --gas-budget 100000000
 
 4. Update the `.env` file with your contract address
 ```env
-REACT_APP_PACKAGE_ID=<your_package_id>
+REACT_APP_PROVER_URL="https://prover-dev.mystenlabs.com/v1"
+REACT_APP_REDIRECT_URL="http://localhost:8080"
+REACT_APP_OPENID_PROVIDER_URL="https://accounts.google.com/.well-known/openid-configuration"
+REACT_APP_FULLNODE_URL="http://127.0.0.1:9000"
+REACT_APP_CLIENT_ID="<CLIENT_ID>" // replace <CLIENT_ID> with the client ID you copied in the previous section from the Google Console
+REACT_APP_PACKAGE_ID=<your_package_id> //This is the contract address. The contract address is used to interact with the predicrypt contract (you'll get this after building and deploying the contract).
 ```
 
 ### Run the Application
